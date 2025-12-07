@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ title }} - Prime & Shine</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/">
+          <img src="/assets/images/logo.png" alt="Prime & Shine logo">
+        </a>
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; {{ new Date().getFullYear() }} Prime &amp; Shine — Mobile Detailing</p>
+        <p>Contact: <a href="mailto:ian.moser7@icloud.com">ian.moser7@icloud.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
